@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/api/*" # Match all requests starting with "/api"
+  to = "https://realestate-26kt.onrender.com/:splat" # Proxy to the backend API
+  status = 200 # Proxy status
+  force = true # Force the redirect even if a file exists
+  [redirects.headers]
+    X-From = "Netlify"
+
